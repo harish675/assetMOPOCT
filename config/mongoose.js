@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 //connect to the db
-mongoose.connect('mongodb://127.0.0.1/task_assessment_db');
+mongoose.connect('mongodb+srv://app:app@cluster0.trayj8w.mongodb.net/app');
 
 //acquire the connection 
  

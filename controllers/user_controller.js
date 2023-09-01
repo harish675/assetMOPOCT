@@ -9,6 +9,7 @@ module.exports.login = function(req,res){
      });
 }
 
+
 //render the registration page 
 module.exports.registration = function(req,res){
      
@@ -49,7 +50,5 @@ module.exports.createUser = async function(req,res){
   
 //sign in and create  a session for the user
 module.exports.createSession = function(req,res){
-      
-   return res.send('<h1>Well come to user profile</h1>');
-      
+   return res.redirect('/dashboard');
 }

@@ -1,4 +1,24 @@
 <link rel="stylesheet" href="/css/header.css">
 <header id="header-section">
-     <p>page Header</p>
+     <p>Recodes</p>
+
+     <div id="authentication-container">
+          <ul>
+              <li>
+                <a href="/" class="header-button">Home</a>
+              </li>
+              <% if(locals.user){%>
+                 
+                 <li>
+                   <a href="/dashboard" class="header-button"><%= user.name %></a>
+                 </li>
+                   
+                 <li>
+                   <a href="/user/sign-out" class="header-button">sign Out</a>
+                 </li>      
+              <%}%>
+                    
+          </ul>
+        </div>
+    
 </header>

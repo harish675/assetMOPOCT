@@ -22,16 +22,13 @@ const recordSchema = mongoose.Schema({
          type:String,
          required:true,
       },
-      status:{
+      active:{
          type:Boolean,
          required:true,
       }   
 },{
-     
      timestamps:true,
 });
-
 const Record = mongoose.model('Record',recordSchema);
-
 module.exports = Record;
 

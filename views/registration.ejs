@@ -1,36 +1,37 @@
+<link rel="stylesheet" href="/css/registration.css">
+<form action="/user/create" method="POST" id="registration-form">
 
- <link rel="stylesheet" href="/css/registration.css">
-<form action="/user/create" method="POST" id="registration-from">
-
-     <div>   
+    <div class="input-container">
         <label for="name">Name:</label>
-        <input type="text" name="name" placeholder="eg.Rohan" id="name" required> 
-     </div>
-      <div id="gender">
-            <label for="gender">Gender</label> 
-            <input type="radio" id="male" name="gender" value="Male">
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
-            <input type="radio" id="other" name="gender" value="Other">
-            <label for="other">Other</label>
-      </div>
+        <input type="text" name="name" placeholder="e.g. Rohan" id="name" required>
+    </div>
 
-       <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="abc@gmail.com">
-            <br>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-            <label for="conform_password">Rewrite Password</label>
-            <input type="password" id="conform_password" name="conform_password" required>
+    <div id="gender">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+    </div>
 
-       </div>
-       
-       <div>
-      
-            <button type="submit">Register</button>
+    <div class="input-container">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com">
+    </div>
 
-       </div>
+    <div class="input-container">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <div class="input-container">
+        <label for="confirm_password">Rewrite Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+    </div>
+
+    <div class="input-container">
+        <button type="submit">Register</button>
+    </div>
 
 </form>

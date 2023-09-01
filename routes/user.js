@@ -11,6 +11,7 @@ router.get('/',function(req,res){
 
 router.get('/login',userController.login);
 router.get('/registration',userController.registration);
+router.get('/sign-out',userController.destroySession);
 router.post('/create',userController.createUser);
 
 //use passport as a middleware to authenticate
@@ -20,4 +21,6 @@ router.post('/create-session',passport.authenticate(
 
        ),userController.createSession);
 
+
+router.use('/record',require('./record'));       
 module.exports = router;

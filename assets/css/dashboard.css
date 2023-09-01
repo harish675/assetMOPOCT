@@ -1,0 +1,111 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+#dashboard-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+#record-creation-form {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#record-creation-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+#record-creation-form input[type="text"],
+#record-creation-form select,
+#record-creation-form textarea,
+#record-creation-form input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#record-creation-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#record-creation-form button[type="submit"] i {
+    margin-right: 5px;
+}
+
+
+#renderList {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+#renderList h2 {
+    margin-bottom: 20px;
+}
+
+
+#renderList ul {
+    list-style: none;
+    padding: 0;
+}
+
+#renderList li {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#renderList a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#renderList a:hover {
+    text-decoration: underline;
+}
+
+
+#deleteSelected {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#deleteSelected i {
+    margin-right: 5px;
+}

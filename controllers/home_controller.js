@@ -2,6 +2,9 @@
 module.exports.homePage = function(req,res){
      
       
-      return res.send('Well come to home page');
+      return res.render('home',{
+             
+             title:'home',
+      })
      
 }
